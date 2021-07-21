@@ -332,7 +332,7 @@ let bundleId = DeviceInfo.getBundleId();
 
 ### isCameraPresent()
 
-Tells if the device have any camera now.
+Tells if the device has any camera now.
 
 #### Examples
 
@@ -1038,6 +1038,9 @@ DeviceInfo.syncUniqueId().then((uniqueId) => {
 ### getUsedMemory()
 
 Gets the app memory usage, in bytes.
+
+⚠️ [A note from the Android docs.](https://developer.android.com/reference/android/app/ActivityManager#getProcessMemoryInfo(int%5B%5D))
+> Note: this method is only intended for debugging or building a user-facing process management UI.
 
 #### Examples
 
